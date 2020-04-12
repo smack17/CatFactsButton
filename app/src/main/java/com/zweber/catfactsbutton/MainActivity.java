@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                catFact.setText(R.string.loading);
                 Retrofit retrofit = new Retrofit.Builder()
                         .baseUrl("https://catfact.ninja/")
                         .addConverterFactory(GsonConverterFactory.create())
